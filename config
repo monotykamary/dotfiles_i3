@@ -159,7 +159,7 @@ mode "$mode_gaps_outer" {
 
 # Client Colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #1C1C1C #1C1C1C #AAAAAA #1C1C1C   #1C1C1C
+client.focused          #1E1E1E #1E1E1E #AAAAAA #1E1E1E   #1E1E1E
 client.focused_inactive #3C3C3C #3C3C3C #CCCCCC #3C3C3C   #3C3C3C
 client.unfocused        #3C3C3C #3C3C3C #666666 #292D2E   #3C3C3C
 client.urgent           #4C4C4C #4C4C4C #CCCCCC #4C4C4C   #4C4C4C
