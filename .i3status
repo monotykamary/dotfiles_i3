@@ -1,0 +1,77 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+    output_format = "i3bar"
+    colors = false
+    interval = 1
+}
+
+order += "disk /"
+order += "wireless wlan0"
+order += "wireless wlp0s20u1"
+order += "wireless wlp0s20u2"
+order += "wireless wlp0s20u3"
+order += "wireless wlp6s0"
+order += "ethernet enp9s0"
+order += "battery 0"
+order += "volume master"
+order += "tztime local"
+
+disk "/" {
+    format = "   %avail "
+}
+
+wireless wlan0 {
+    format_up = "   (AR9271) → (%essid)  @ %bitrate "
+    format_down = ""
+}
+
+wireless wlp0s20u1 {
+    format_up = "   (AR9271) → (%essid)  @ %bitrate "
+    format_down = ""
+}
+
+wireless wlp0s20u2 {
+    format_up = "   (AR9271) → (%essid)  @ %bitrate "
+    format_down = ""
+}
+
+wireless wlp0s20u3 {
+    format_up = "   (AR9271) → (%essid)  @ %bitrate "
+    format_down = ""
+}
+
+wireless wlp6s0 {
+    format_up = "   (BCM43142) → (%essid)  @ %bitrate "
+    format_down = ""
+}
+
+ethernet enp9s0 {
+    format_up = "  (RTL8101/2/6E) → (%ip)  @ %speed "
+    format_down = ""
+}
+
+battery 0 {
+    format = " %status %percentage "
+    status_chr = "⚡"
+    status_bat = ""
+    status_full = ""
+}
+
+volume master {
+    format = "   %volume "
+    format_muted = "   0%% "
+    device = "hw:0"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+tztime local {
+    format = "%a    %b %_d日 %Y年 - %l:%M%p  "
+}
