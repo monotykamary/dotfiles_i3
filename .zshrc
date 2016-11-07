@@ -4,7 +4,7 @@ antigen bundle git
 antigen bundle pip
 antigen bundle zsh-users/zsh-completions src
 
-
+zstyle ':completion:*' rehash true
 ZSH_THEME="minimal"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git)
